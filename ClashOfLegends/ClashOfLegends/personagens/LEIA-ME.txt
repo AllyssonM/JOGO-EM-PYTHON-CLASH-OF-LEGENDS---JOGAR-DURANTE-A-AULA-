@@ -1,0 +1,40 @@
+COMO COLOCAR A SUA ARTE NO CLASH OF LEGENDS
+===========================================
+
+1. Crie uma pasta com o nome do heroi aqui dentro:
+      personagens/zeno/   personagens/lyra/   personagens/pixelion/
+      personagens/sombra/ personagens/brasa/  personagens/malakar/
+
+2. Coloque as pecas em PNG (veja MOLDE_PECAS.png para tamanhos e juntas):
+      cabeca.png  tronco.png  braco.png  antebraco.png
+      coxa.png    canela.png  pe.png     capa.png (opcional)
+      retrato.png (busto para a selecao e os dialogos)
+
+3. Regras:
+   - Tudo virado para a DIREITA (o jogo espelha sozinho).
+   - Braco e perna desenhados EM PE: junta de cima no topo, junta de baixo na ponta.
+   - Fundo transparente OU verde puro (#00FF00): o jogo remove o verde.
+   - Pode faltar peca: o jogo desenha o que faltar.
+   - Pode desenhar maior (o dobro): o tamanho e ajustado pelo esqueleto.
+
+4. Roupas alternativas com arte propria:
+      personagens/zeno/uniforme2/  (uniforme3, uniforme4)
+   So com as pecas que mudam (ex.: so tronco.png e capa.png).
+   O uniforme 1 e a pasta principal. Os uniformes 2 a 4 desbloqueiam nos niveis 2, 4 e 6.
+
+5. Abra o jogo de novo para ver as mudancas.
+
+OPCAO 2: PERSONAGEM QUADRO A QUADRO (sprite sheet / animacao classica)
+=====================================================================
+Use quando o pacote de arte ja vem com as poses desenhadas (como o BIGODE).
+Crie personagens/<nome>/quadros/ com uma pasta (ou um PNG unico) por animacao:
+
+   parado/  andar/  pular.png  cair.png  soco/  chute/  soco_ar/  chute_ar/
+   especial/  defesa/  golpe.png  nocaute.png  vitoria/
+
+ - So "parado" e obrigatorio. O que faltar usa a animacao mais parecida.
+ - Quadros em ordem pelo nome do arquivo: 000.png, 001.png, 002.png...
+ - Virado para a DIREITA. O jogo acha os pes sozinho e ajusta o tamanho.
+ - Exemplo pronto: personagens/bigode/ (arte CC0 de nemezes, OpenGameArt).
+ - Quadros tem prioridade sobre as pecas (opcao 1).
+ - Para um heroi NOVO aparecer no jogo, ele precisa estar na lista ROSTER do codigo.

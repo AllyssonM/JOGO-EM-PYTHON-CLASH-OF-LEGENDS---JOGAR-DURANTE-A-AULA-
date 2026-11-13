@@ -1,0 +1,36 @@
+CLASH OF LEGENDS - RPG de luta 2D em Python
+===========================================
+
+COMO JOGAR
+1. Instale o Python 3 (python.org). No Windows, marque "Add Python to PATH".
+2. Windows: de dois cliques em JOGAR.bat
+   Mac/Linux: abra o terminal nesta pasta e rode:  sh jogar.sh
+   (ou, em qualquer sistema:  py -m pip install pygame-ce   e depois   py clash_of_legends.py)
+   Use pygame-ce: funciona em todas as versoes do Python, inclusive a 3.14.
+
+MODOS
+  Historia (5 atos, final decidido pelo seu jeito de lutar), Luta vs Maquina,
+  1 vs 1 local, e O POUSO (fazenda + vila do cla, salvo automaticamente)
+
+HEROIS
+  17 herois: Zeno, Lyra, Pixelion, Sombra, Brasa, Bigode, Kaze, Toran, Varn, Kairo,
+  Rei, Orin, Morgran, Pip, Nix, Gram e Elian. Na selecao: setas/WASD escolhem, Q/E trocam o uniforme.
+
+CONTROLES DE LUTA
+  Jogador 1: A/D mover, W pular, S defender, J soco, K chute, L especial,
+             U chakra (segure), I jutsu final
+  Jogador 2: setas mover/pular/defender, N soco, M chute, virgula especial,
+             ponto chakra, barra jutsu final  (ou teclado numerico 1-5)
+  - Levando golpe + chakra (30% de energia) = SUBSTITUICAO (aparece atras do inimigo)
+  - Barra em 100% + jutsu final = cena cinematografica e golpe gigante
+  - Segurar chakra com a barra em 100% = DESPERTAR (+25% dano, 12 segundos)
+
+CONTROLES DO POUSO
+  WASD/setas andar, E usar (plantar, regar, colher, lojas), Q troca semente, ESC casa
+  Selecao: setas escolhem o heroi, W/S troca o uniforme, ENTER confirma
+  ESC pausa | F11 tela cheia
+
+ARQUIVOS
+  clash_of_legends.py    o jogo
+  HISTORIA_E_DESIGN.md   historia, mundo e plano do jogo
+  personagens/           arte dos personagens (veja personagens/LEIA-ME.txt)
